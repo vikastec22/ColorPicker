@@ -1,0 +1,48 @@
+.cl-mdcolorpicker {
+  position: relative;
+}
+
+.cl-mdcolorpicker .materialpicker-colors {
+    -webkit-user-select: none;
+    user-select: none;
+    position: absolute;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    display: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    z-index: 10;
+    width: 282px;
+}
+
+.cl-mdcolorpicker .materialpicker-colors div.item {
+      height: 40px;
+      width: 70px;
+      cursor: pointer;
+      float: left;
+}
+
+.cl-mdcolorpicker .materialpicker-colors div.item:hover {
+      opacity: .9;
+}
+
+.cl-mdcolorpicker .materialpicker-colors div.selected {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 4px #000;
+    border: 2px solid #FFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cl-mdcolorpicker .colorpicker-preview {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    border: solid 1px #eaeaea;
+    margin: 2px;
+    padding: 1px;
+}

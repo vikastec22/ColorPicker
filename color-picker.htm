@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="./md-colorpicker.css" />
+        <link rel="stylesheet" type="text/css" href="./bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-group">
+                <label for="textbox1">Input box1</label>
+                <input type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="textbox2">Input box2</label>
+                <input type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="button">Button</label>
+                <button class="btn">Click!</div>
+            </div>
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="./md-colorpicker.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('input[type="text"]').mdColorPicker({
+                    color: '#00ACC1'
+                }, function(elm, color) {
+                   $(elm).val(color);
+                });
+
+                $('button[class="btn"]').mdColorPicker({
+                    color: '#00ACC1'
+                }, function(elm, color) {
+                   $(elm).css({
+                    'background-color': color
+                   });
+                });
+            });
+        </script>
+    </body>
+</html>
